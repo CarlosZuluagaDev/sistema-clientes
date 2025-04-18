@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Cliente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form-container-vertical" id="clienteForm">
+      <input type="text" name="cedulaBuscar" placeholder="Cédula"  />
+      <button type="button" class="btn btn-submit" id="btnBuscarCliente">Buscar Cliente</button>
+    
+      <h3>Cliente</h3>
+      <input type="text" name="primerNombre" placeholder="Primer Nombre" required />
+      <input type="text" name="segundoNombre" placeholder="Segundo Nombre" />
+      <input type="text" name="primerApellido" placeholder="Primer Apellido" required />
+      <input type="text" name="segundoApellido" placeholder="Segundo Apellido" />
+      <input type="text" name="cedula" placeholder="Cedula" />
+      <input type="text" name="telefonoUno" placeholder="Teléfono Uno" required />
+      <input type="text" name="telefonoDos" placeholder="Teléfono Dos" />
+      <input type="email" name="email" placeholder="E-mail" />
+    
+      <h3>Dirección</h3>
+      <input type="text" name="direccion" placeholder="Dirección" required />
+      <input type="text" name="departamento" placeholder="Departamento" required />
+      <input type="text" name="ciudad" placeholder="Ciudad" required />
+      <input type="text" name="barrio" placeholder="Barrio" />
+      <input type="text" name="descripcion" placeholder="Descripción" />
+    
+      <select name="estado" id="estado">
+        <option value="true" selected>Activo</option>
+        <option value="false">Inactivo</option>
+      </select>
+    
+      <div class="btn-container">
+        <button type="submit" class="btn btn-submit">Agregar</button>
+        <button type="button" id="btnActualizar" class="btn btn-info">Actualizar</button>
+        <button type="button" id="btnLimpiar" class="btn btn-warning">Limpiar</button>
+      </div>
+    </form>
+    
+  </div>
+
+  <script src="scriptAgregarEditarLimpiar.js"></script>
+  
+
+</body>
+</html>

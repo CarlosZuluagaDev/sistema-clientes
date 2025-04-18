@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro Clientes</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Cliente</h1>
+       <form action="" id="clienteForm" class="form">
+        <input type="text" placeholder="primer nombre" name="primerNombre" required>
+        <input type="text" placeholder="segundo nombre" name="segundoNombre">
+        <input type="text" placeholder="primer apellido" name="primerApellido" required>
+        <input type="text" placeholder="segundo apellido" name="segundoApellido">
+        <input type="text" placeholder="cedula" name="cedula" required>
+        <input type="text" placeholder="telefono uno" name="telefonoUno" required>
+        <input type="text" placeholder="telefono dos" name="telefonoDos">
+        <input type="text" placeholder="email" name="email">
+        </form>
+
+        
+
+        <h1>Direccion</h1>
+        <form action="" id="direccionForm" class="form">
+            <input type="text" placeholder="direccion" name="direccion" required>
+            <input type="text" placeholder="ciudad" name="ciudad" required>
+            <input type="text" placeholder="departamento" name="departamento" required>
+            <input type="text" placeholder="barrio" name="barrio" required>
+            <input type="text" placeholder="descripocion" name="descripcion" required>
+            <select name="estado" id="estado">
+            <option value="true" selected>activo</option>
+            <option value="false">inactivo</option>
+            </select>
+
+        </form> 
+        <button id="agregar-cliente" class="btn-primary">Agregar Cliente</button>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
